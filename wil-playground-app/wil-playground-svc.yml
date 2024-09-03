@@ -4,10 +4,11 @@ metadata:
   name: wil-playground-svc
   namespace: dev
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: wil-playground-app
   ports:
     - protocol: TCP
       port: 80
       targetPort: 8888
+      nodePort: 30007
