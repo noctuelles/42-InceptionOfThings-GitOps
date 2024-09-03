@@ -6,7 +6,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app: wil-playground-app
+    app: wil-playground
   ports:
     - protocol: TCP
       port: 8888
